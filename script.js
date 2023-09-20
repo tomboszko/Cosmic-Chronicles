@@ -1,56 +1,58 @@
-document.addEventListener("DOMContentLoaded", function () {
-const objectsToDisplay = [
+
+const container = document.querySelector("#objectList");
+const collection = [
+
+    {
+        Serial:"A-1-1",
+        name:"Xeno-Lord",
+        illustration:"https://th.bing.com/th/id/OIG.ARfFgyvEMswOtr6XA3gX?pid=ImgGn",
+        Type:"Alien",
+        Power:"Psychic Blast",
+        Attack:120,
+        Defense:80,
+        Description:"Xeno-Lord is an extraterrestrial lord with a powerful Psychic Blast. He commands a formidable alien army.",
+        Color:"#34eb34",
+        },
+        
+
+        {
+            Serial:"A-1-2",
+            name:"Alien Grunt",
+            illustration:"https://th.bing.com/th/id/OIG.RUAcNK8n_QIw3WxeP0y2?pid=ImgGn",
+            Type:"Alien",
+            Power:"Plasma Bolt",
+            Attack:70,
+            Defense:60,
+            Description:"Alien Grunts are extraterrestrial infantry soldiers armed with Plasma Bolts for close combat.",
+            Color:"#34eb35",
+            },
+            
+
+            {
+                Serial:"A-1-3",
+                name:"Starlight Serpent",
+                illustration:"https://th.bing.com/th/id/OIG.93iQKy0I5rpPYtNrln_2?pid=ImgGn&rs=1",
+                Type:"Alien",
+                Power:"Cosmic Coil",
+                Attack:95,
+                Defense:75,
+                Description:"The Starlight Serpent is an agile extraterrestrial creature capable of launching energy Cosmic Coils.",
+                Color:"#34eb36",
+                },
+                
 
 {
-Serial:"CC_01",
-name:"Solar Sentinel",
-illustration:"https://th.bing.com/th/id/OIG.wzlfgE6T_PlRYiPZGxmU?pid=ImgGn",
+Serial:"CC_04",
+name:"Nebula Navigators",
+illustration:"https://th.bing.com/th/id/OIG.Rgo11WuO2_iPBjC4mrp2?pid=ImgGn",
 Type:"Alien",
-Power:"Solar Flare",
-Attack:115,
+Power:"Space Warp",
+Attack:85,
 Defense:90,
-Description:"The Solar Sentinel protects the stars with its Solar Flare ability.",
-Color:"XXX",
-},
-
-{
-Serial:"CC_02",
-name:"Interstellar Diplomat",
-illustration:"https://th.bing.com/th/id/OIG.dKY0mcK1LuXntdmKmkqz?pid=ImgGn",
-Type:"Alien",
-Power:"Telepathic Negotiation",
-Attack:90,
-Defense:100,
-Description:"The Interstellar Diplomat resolves conflicts through telepathic negotiation.",
-Color:"XXX",
-},
-
-{
-Serial:"CC_03",
-name:"Quantum Explorer",
-illustration:"https://th.bing.com/th/id/OIG.3gE8MtLuk7VS3rzxu1AJ?pid=ImgGn",
-Type:"Alien",
-Power:"Quantum Leap",
-Attack:105,
-Defense:95,
-Description:"The Quantum Explorer explores alternative realities with its Quantum Leap ability.",
-Color:"#34eb45",
-},
-
-{
-    Serial:"A-1-4",
-    name:"Nebula Navigators",
-    illustration:"https://th.bing.com/th/id/OIG.Rgo11WuO2_iPBjC4mrp2?pid=ImgGn",
-    Type:"Alien",
-    Power:"Space Warp",
-    Attack:85,
-    Defense:90,
-    Description:"Nebula Navigators are extraterrestrials skilled in space-time manipulation through their Space Warp ability.",
-    Color:"#34eb37",
+Description:"Nebula Navigators are extraterrestrials skilled in space-time manipulation through their Space Warp ability.",
+Color:"#34eb37",
     },
     
-
-
 {
 Serial: "CC_05",
 name: "Celestial Mindmaster",
@@ -579,12 +581,10 @@ Description: "Space Cruiser is a spaceship equipped with a Warp Drive for rapid 
 Color: "#ffa211",
 },
 
-
-
 ];
 
-const returnCollection = (object) => {
-return object.map((object) => `
+const returnCollection = (collection) => {
+return collection.map((object) => `
 
 <div class ="carte">
 
@@ -594,7 +594,7 @@ return object.map((object) => `
 </div>
 
 <div class="illustration">
-<img src="${object.illustration}" alt="${object.name}"/>
+<img src="${object.illustration}" alt="${object.name}">
 </div>
 
 <div class="name_A_D">
@@ -610,17 +610,12 @@ return object.map((object) => `
 
 
 </div>
-
 `
 ).join(""); // Use join("") to convert the array of strings to a single string
 };
+container.innerHTML = returnCollection(collection);
 
-const generatedHTML = returnCollection(objectsToDisplay);
 
-const listContainer = document.getElementById("objectList");
-if (listContainer) {
-listContainer.innerHTML = generatedHTML;
-} else {
-console.error("Element with ID 'objectList' not found in the document.");
-}
-});
+
+
+  
