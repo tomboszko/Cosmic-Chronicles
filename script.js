@@ -582,9 +582,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ];
   
-    const returnCollection = (objects) => {
-      return objects.map((object) => `
-      
+    const returnCollection = (object) => {
+      return object.map((object) => `
+
       <div class ="carte">
 
         <div class ="carte_header">
@@ -598,8 +598,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <div class="name_A_D">
           <div classe="name"><p>${object.name}</p></div>
-          <div classe="name"><p>${object.Attack}</p></div>
-          <div classe="name"><p>${object.Defense}</p></div>
+          <div classe="name"><p>A:${object.Attack} / D:${object.Defense}</p></div>
+          
         </div>
 
         <div class="text">
