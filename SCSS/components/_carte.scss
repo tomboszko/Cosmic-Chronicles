@@ -59,8 +59,26 @@
             right: 5px;
             left: 5px;
         }
-        
-        
+            
+    }
+
+    .name_A_D {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: {
+            left: 11px;
+            right: 11px;
+            top: 2px;
+        }
+
+        font: {
+            family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            size: 10px;
+        }
+        color:white;    
+    
     }
 
     .text {
