@@ -584,20 +584,33 @@ document.addEventListener("DOMContentLoaded", function () {
   
     const returnCollection = (objects) => {
       return objects.map((object) => `
-        <li class="carte">
-          <figure class="item_header">
-            <img src="${object.illustration}" alt="${object.name}"/>
-          </figure>
-          <div class="item_content">
-            <h3>${object.name}</h3>
-            <h4>Type: ${object.Type}</h4>
-            <h4>Power: ${object.Power}</h4>
-            <p>Attack: ${object.Attack}</p>
-            <p>Defense: ${object.Defense}</p>
-            <p>${object.Description}</p>
-          </div>
-          <div class="color">${object.Color}</div>
-        </li>`
+      
+      <div class ="carte">
+
+        <div class ="carte_header">
+          <div class="type"><p>${object.Type}</p></div>
+          <div classe="color">${object.Color}</div>
+        </div>
+
+        <div class="illustration">
+          <img src="${object.illustration}" alt="${object.name}"/>
+        </div>
+
+        <div class="name_A_D">
+          <div classe="name"><p>${object.name}</p></div>
+          <div classe="name"><p>${object.Attack}</p></div>
+          <div classe="name"><p>${object.Defense}</p></div>
+        </div>
+
+        <div class="text">
+          <div class="power"><h2>Power: ${object.Power}</h2></div>
+          <div class="description"><p>${object.Description}</p></div>
+        </div>
+
+
+      </div>
+    
+        `
       ).join(""); // Use join("") to convert the array of strings to a single string
     };
   
