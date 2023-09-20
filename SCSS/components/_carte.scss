@@ -4,10 +4,14 @@
     background-color: rgb(3, 4, 19);
     border-radius: 8px;
     box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.33);
+    z-index: 1;
+    transition: transform .1s;
+    
     margin: {
         left: auto;
         right: auto;
         bottom: 10px;
+
     }
     
     .carte_header {
@@ -118,12 +122,10 @@
             left: 4px;
             top: 3px;
         }
+        font-size: smaller;
+        font-weight: 800;
         
-        font: {
-            weight: 900;
-            font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font: 12px;
-        } 
+        
         
     }
 
@@ -141,7 +143,10 @@
         }
         
         
-}
+}}
 
-    
-}
+.carte:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    }

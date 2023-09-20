@@ -624,5 +624,3 @@ listContainer.innerHTML = generatedHTML;
 console.error("Element with ID 'objectList' not found in the document.");
 }
 });
-
-console.log(getSelection.length);
