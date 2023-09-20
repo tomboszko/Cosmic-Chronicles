@@ -53,13 +53,10 @@ body {
 }
 
 
-.item_header {
-    margin: auto;
-}
-
 img {
-    width: auto;
-    height: auto;
+    width:90%;
+    height:90%;
+    margin: auto;
 }
 
 #objectList {
