@@ -7,7 +7,7 @@
 
 Explore a world where imagination fuses with science fiction to create thrilling interstellar tales. Seize control of these unique cards and uncover humanity's future among the stars.
 
-![Post-humans](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-04-39.png) ![Robots](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-05-16.png) ![Aliens](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-06-18.png) ![Vehicles](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-05-51.png)
+![Post-humans](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-04-39.png =220x305) ![Robots](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-05-16.png =220x305) ![Aliens](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-06-18.png =220x305) ![Vehicles](https://github.com/tomboszko/Cosmic-Chronicles/blob/c1767c4e0192329625b49a1b3f1668ce3fed5fd1/pictures/Capture%20d%E2%80%99%C3%A9cran%20du%202023-09-21%2010-05-51.png =220x305)
 
 This a collection of 48 cards, sorted by 4 main types such as:
 
