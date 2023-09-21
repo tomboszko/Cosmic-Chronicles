@@ -56,6 +56,9 @@ I also made a prompt using the description of the cards and send it to BingAI to
 
 No real issues, maybe some struggles with the DOM but it worked.
 
+☑️ **Markup validation passed!**
+
+
 ### Style
 
 For this project, I don't think that it's really convenient to use Sass, they are not really much elements.
