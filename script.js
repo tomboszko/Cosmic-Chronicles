@@ -1,4 +1,4 @@
-
+//creating collection  maybe not the best way but it works
 const container = document.querySelector("#objectList");
 const collection = [
 
@@ -583,6 +583,7 @@ Color: "#ffa211",
 
 ];
 
+//mapping collection to index
 const returnCollection = (collection) => {
 return collection.map((object) => `
 
@@ -607,7 +608,7 @@ return collection.map((object) => `
 <div class="power"><h2>Power: ${object.Power}</h2></div>
 <div class="description"><p>${object.Description}</p></div>
 </div>
-
+<div class="footer"><p>${object.Text}</p></div>
 
 </div>
 `
@@ -617,16 +618,14 @@ container.innerHTML = returnCollection(collection);
 
 
         
-
+//sorting buttons
 container.innerHTML = returnCollection(collection);
-
        
     function filterAndDisplayObjects(type) {
             const filteredObjects = collection.filter((object) => object.Type === type);
             container.innerHTML = returnCollection(filteredObjects);
         }
 
-       
         const showAliensButton = document.getElementById("showAliens");
         showAliensButton.addEventListener("click", () => filterAndDisplayObjects("Alien"));
         
@@ -644,10 +643,14 @@ container.innerHTML = returnCollection(collection);
             container.innerHTML = returnCollection(collection);
         });
 
-        const Copyrights= "All rights reserved by the Toma-Cola Company";
 
-collection.forEach((objet) => {
-    objet.Texte = Copyrights;
-});
+//adding some text to all objects at once
+        const copyrights = "All rights reserved by the Toma-Cola Company";
 
+        collection.forEach((object) => {
+            object.Text = copyrights;
+        });
+
+        console.log(copyrights);
+//I tried but I don't have time anymore now. --> JS ok but styling is messy.
 
