@@ -62,7 +62,17 @@ For this project, I don't think that it's really convenient to use Sass, they ar
 
 My main victory for this aspect of the project is that **La pièce est tombée** concerning all the `div' stuff and how to structure them in a correct way via index file.
 
-I'm proud of me concerning my style, I will keep the structure of my cards and enhance it for further projects.
+🥇 I'm proud of me concerning my style, I used some displaying stuffs like `flex box` `grid` etc...
+
+I will keep the structure of my cards and enhance it for further projects --> next step is to make cards interacts between them.
+
+AT this point of the project, concerning Bonus features , I just added a transition. Once this feedback is finished, I will try the ''delete button''.
+
+### Conclusion 
+
+The data managing aspect is very interesting, and I want to go deeper in it. so I think that I will use a framework for the style and develop my skills in data languages. 
+
+
 
 
 
