@@ -587,7 +587,7 @@ Color: "#ffa211",
 const returnCollection = (collection) => {
 return collection.map((object) => `
 
-<div class ="carte">
+<div class ="carte" data-serial="${object.Serial}">
 
 <div class ="carte_header">
 <div class="type"><p>${object.Type}</p></div>
@@ -657,6 +657,10 @@ container.innerHTML = returnCollection(collection);
         console.log(copyrights);
 //I tried but I don't have time anymore now. --> JS ok but styling is messy.
 // main goal is to have a delete button so: 
+
+// I tried but no more time.
+
+
 
 
 
