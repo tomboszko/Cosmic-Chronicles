@@ -1,0 +1,337 @@
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in
+the project.
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating
+to a reusable component.
+*/
+button {
+  width: 80px;
+  height: 22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  padding: 3px;
+}
+
+button:after {
+  content: "SHOW";
+  width: 0%;
+  height: 100%;
+  background: #f802c3;
+  color: aliceblue;
+  position: absolute;
+  padding-top: AUTO;
+  padding-bottom: auto;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #9b1dac;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.carte {
+  width: 220px;
+  height: 305px;
+  background-color: rgb(3, 4, 19);
+  border-radius: 8px;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.33);
+  z-index: 1;
+  transition: transform 0.1s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.carte .carte_header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 8px;
+  color: white;
+}
+.carte .color {
+  background-image: url("icons8-transformateur-48.png");
+  background-size: 10px, 10px;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0);
+  text-align: end;
+}
+.carte .illustration {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.carte img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.name_A_D {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-top: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+.text {
+  width: 200px;
+  height: 107px;
+  display: grid;
+  grid-template-rows: repeat(2);
+  background-image: url(https://th.bing.com/th/id/OIG.ep2SwckGJk.McYTuxcJu?pid=ImgGn);
+  background-position: center;
+  Margin-top: 2px;
+  Margin-right: 10px;
+  Margin-left: 8px;
+  Margin-bottom: 10px;
+  border-radius: 6px;
+  border-style: inset;
+  border-color: blueviolet;
+  border-width: 1.5px;
+}
+
+.power {
+  text-shadow: rgba(225, 0, 255, 0.979) 1px 0 10px;
+  color: rgba(47, 13, 167, 0.979);
+  padding-left: 4px;
+  padding-top: 3px;
+  font-size: smaller;
+  font-weight: 800;
+}
+
+.description {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 550;
+}
+.description .footer {
+  display: flex;
+  justify-content: center;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 8px;
+  color: white;
+}
+
+.carte:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder should contain all styles relating
+to layouts.
+*/
+.header {
+  background-color: black;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.header .cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 200%;
+  font-optical-sizing: auto;
+  color: rgb(183, 6, 253);
+}
+.header p {
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+}
+
+.containerButton {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background: linear-gradient(#052544, #4e0058, #052544, #4e0058);
+  width: 100%;
+  height: 100%;
+}
+
+#objectList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+  gap: 10px;
+}
+
+#shadowing {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #CCA;
+  z-index: 10;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#box {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  max-width: 600px;
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  background-color: white;
+  z-index: 11;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 10%;
+}/*# sourceMappingURL=style.css.map */

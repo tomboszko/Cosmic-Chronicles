@@ -1,0 +1,175 @@
+
+
+
+.carte {
+    width:220px;
+    height: 305px;
+    background-color: rgb(3, 4, 19);
+    border-radius: 8px;
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.33);
+    z-index: 1;
+    transition: transform .1s;
+    display: block;
+    margin: {
+        left: auto;
+        right: auto;
+        bottom: 10px;
+
+    }
+    
+    .carte_header {
+        display:flex;
+        justify-content: space-between;
+        padding: {
+            left: 11px;
+            right: 11px;
+            top: 2px;
+            bottom: 1px;
+        }
+        font: {
+            family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            size: 8px;
+        }
+        color:white;
+    }
+    
+    .color {
+        background: {
+            image: url("icons8-transformateur-48.png");
+            size: 10px, 10px;
+            repeat:no-repeat;
+        }
+        color: rgba(255, 255, 255, 0);
+        text-align: end;
+        
+    
+    }
+
+    .illustration {
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin: {
+            left: 5px;
+            right: 5px;
+        }
+        
+    
+    }
+
+    img {
+        width:100%;
+        height:100%;
+        border-radius: 6px;
+        margin: {
+            right: 5px;
+            left: 5px;
+            } 
+            
+        }
+        
+            
+    }
+
+    .name_A_D {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: {
+            left: 11px;
+            right: 11px;
+            top: 2px;
+        }
+
+        font: {
+            family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            size: 10px;
+        }
+        color:white;    
+    
+    }
+
+    .text {
+        width:200px;
+        height: 107px;
+        display: grid;
+        grid-template-rows: repeat(2);
+        background-image: url(https://th.bing.com/th/id/OIG.ep2SwckGJk.McYTuxcJu?pid=ImgGn);
+        background-position: center;
+        
+        Margin: {
+            top:2px;
+            right:10px;
+            left: 08px;
+            bottom: 10px;
+        }
+
+        
+        border: {
+            radius: 6px;
+            style:inset;
+            color: blueviolet;
+            width: 1.5px;
+        }   
+        
+    }
+    
+    .power {
+        text-shadow: rgba(225, 0, 255, 0.979) 1px 0 10px;
+        color: rgba(47, 13, 167, 0.979);
+
+        padding: {
+            left: 4px;
+            top: 3px;
+        }
+        font-size: smaller;
+        font-weight: 800;
+        
+        
+        
+    }
+
+    .description {
+        margin: {
+            left: 20px;
+            right: 20px;
+        }
+
+        font: {
+            family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            size: 13px;
+            style: italic;
+            weight: 550;
+        }
+        
+        .footer  {
+            
+            display:flex;
+            justify-content:center;
+            padding: {
+                left: 11px;
+                right: 11px;
+                top: 2px;
+                bottom: 1px;
+            }
+            font: {
+                family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                size: 8px;
+            }
+            color:white;
+        }
+
+        
+        
+    }
+
+
+
+
+.carte:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    }
