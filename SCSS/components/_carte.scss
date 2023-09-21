@@ -144,8 +144,29 @@
             weight: 550;
         }
         
+        .footer  {
+            
+            display:flex;
+            justify-content:center;
+            padding: {
+                left: 11px;
+                right: 11px;
+                top: 2px;
+                bottom: 1px;
+            }
+            font: {
+                family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                size: 8px;
+            }
+            color:white;
+        }
+
         
-}
+        
+    }
+
+
+
 
 .carte:hover{
     -ms-transform: scale(1.05); /* IE 9 */

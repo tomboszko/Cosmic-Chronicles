@@ -608,10 +608,13 @@ return collection.map((object) => `
 <div class="power"><h2>Power: ${object.Power}</h2></div>
 <div class="description"><p>${object.Description}</p></div>
 </div>
-<div class="footer"><p>${object.Text}</p></div>
+
 
 </div>
-`
+`            
+// <div class="footer"><p>${object.Text}</p></div> -> srting text to add ''copyrights'' thing on the card
+
+
 ).join(""); // Use join("") to convert the array of strings to a single string
 };
 container.innerHTML = returnCollection(collection);
@@ -653,4 +656,7 @@ container.innerHTML = returnCollection(collection);
 
         console.log(copyrights);
 //I tried but I don't have time anymore now. --> JS ok but styling is messy.
+// main goal is to have a delete button so: 
+
+
 
