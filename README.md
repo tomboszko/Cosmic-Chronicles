@@ -7,12 +7,15 @@
 
 Explore a world where imagination fuses with science fiction to create thrilling interstellar tales. Seize control of these unique cards and uncover humanity's future among the stars.
 
+![]() ![]() ![]() ![]()
+
 This a collection of 48 cards, sorted by 4 main types such as:
 
  - Aliens
  - Robots
  - Post-humans
  - Vehicles
+   
 Each type belong to an object, for example:
 
 ```javascript
@@ -31,10 +34,11 @@ Each type belong to an object, for example:
 
 They are displayed via HTML and stylized via SASS in a Responsive way:
 
+
+
 Link to the page: []()
 
 
- const collection
 
  
 
