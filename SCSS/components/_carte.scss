@@ -9,7 +9,7 @@
     box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.33);
     z-index: 1;
     transition: transform .1s;
-    
+    display: block;
     margin: {
         left: auto;
         right: auto;
@@ -34,7 +34,10 @@
     }
     
     .color {
-      
+        background: {
+            image: url("icons8-transformateur-48.png");
+            size: 10px, 10px;
+            repeat:no-repeat;
         }
         color: rgba(255, 255, 255, 0);
         text-align: end;
@@ -104,15 +107,12 @@
         }
 
         
-        
-        
         border: {
             radius: 6px;
             style:inset;
             color: blueviolet;
             width: 1.5px;
-        }
-        
+        }   
         
     }
     
@@ -145,7 +145,7 @@
         }
         
         
-}}
+}
 
 .carte:hover{
     -ms-transform: scale(1.05); /* IE 9 */

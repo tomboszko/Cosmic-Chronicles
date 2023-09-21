@@ -616,6 +616,38 @@ return collection.map((object) => `
 container.innerHTML = returnCollection(collection);
 
 
+        
+
+container.innerHTML = returnCollection(collection);
+
+       
+    function filterAndDisplayObjects(type) {
+            const filteredObjects = collection.filter((object) => object.Type === type);
+            container.innerHTML = returnCollection(filteredObjects);
+        }
+
+       
+        const showAliensButton = document.getElementById("showAliens");
+        showAliensButton.addEventListener("click", () => filterAndDisplayObjects("Alien"));
+        
+        const showRobotsButton = document.getElementById("showRobots");
+        showRobotsButton.addEventListener("click", () => filterAndDisplayObjects("Robot"));
+        
+        const showPost_humansButton = document.getElementById("showPost_humans");
+        showPost_humansButton.addEventListener("click", () => filterAndDisplayObjects("Post human"));
+        
+        const showVehiclesButton = document.getElementById("showVehicles");
+        showVehiclesButton.addEventListener("click", () => filterAndDisplayObjects("Vehicle"));
+        
+        const showAllButton = document.getElementById("showAllButton");
+        showAllButton.addEventListener("click", () => {
+            container.innerHTML = returnCollection(collection);
+        });
+
+        const Copyrights= "All rights reserved by the Toma-Cola Company";
+
+collection.forEach((objet) => {
+    objet.Texte = Copyrights;
+});
 
 
-  
