@@ -68,6 +68,8 @@ I will keep the structure of my cards and enhance it for further projects --> ne
 
 AT this point of the project, concerning Bonus features , I just added a transition. Once this feedback is finished, I will try the ''delete button''.
 
+Update: sorting buttons added, they are not so nice, but they're ''buttoning'' pretty good 😆
+
 ### Conclusion 
 
 The data managing aspect is very interesting, and I want to go deeper in it. so I think that I will use a framework for the style and develop my skills in data languages. 
