@@ -36,6 +36,8 @@ Link to the page: []()
 
 ## My feedback
 
+### Javascript
+
 I don't really had issues with the Javascript side, and I found a way to enter many object in a short time (when others where inputing about 5 objects, I inputed 48. 
 
 I asked to ChatGPT to create a board with all the cards and for each card, his specs. I also asked him to define a univers to have some fun context.
@@ -46,9 +48,25 @@ Then,
 
 `Ctrl+C` / `Ctrl+V` to Excel, I have some good skills at it.
 
-SO, in Excel, I have just reorganised the data from ChatGPT, then, using just a validation list, a vlookup and a concatenate function, Excel provided me an object for each cards in a javascript syntax.
+SO, in Excel, I have just reorganised the data from ChatGPT, then, using just a `validation list`, a `vlookup` and a concatenate ( `&` ) function, Excel provided me an object for each cards in a javascript syntax.
 
-I also made a prompt using the description of the cards and send it to BingAI to generate some good illustrations ands It worked !!!.
+I also made a prompt using the description of the cards and send it to BingAI to generate some good illustrations ands It worked !!!. 
+
+### HTML
+
+No real issues, maybe some struggles with the DOM but it worked.
+
+### Style
+
+For this project, I don't think that it's really convenient to use Sass, they are not really much elements.
+
+My main victory for this aspect of the project is that **La pièce est tombée** concerning all the `div' stuff and how to structure them in a correct way via index file.
+
+I'm proud of me concerning my style, I will keep the structure of my cards and enhance it for further projects.
+
+
+
+
 
 
 
