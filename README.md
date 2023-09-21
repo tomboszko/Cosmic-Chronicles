@@ -75,23 +75,6 @@ The data managing aspect is very interesting, and I want to go deeper in it. so 
 
 
 
-
-
-
-
-
-🌼 Nice to have features (BONUS)
-Delete functionality
-Add the ability for users to delete an item from the collection.
-
-Transitions
-Add animations to your page to make it more engaging and visually appealing. Use CSS transitions to add subtle movements to elements on the page, such as when hovering over a card or a card being added or deleted to the page
-
-Sorting
-Add sorting functionality to allow users to sort the collection by selecting a category to display,for exemple: actions movie or pasta recipes.
-
-
-
  
 
 
